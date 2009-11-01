@@ -1,5 +1,7 @@
 <!-- 
 http://github.com/asenchi/misc-cassandra
+
+Great diagram here: http://asenchi.com/~cbm/misc-cassandra/delicious-schema.html
 -->
 <Keyspaces>	
 	<Keyspace Name="Delicious">
