@@ -1,0 +1,14 @@
+<!-- 
+http://github.com/asenchi/misc-cassandra
+-->
+<Keyspaces>	
+	<Keyspace Name="Delicious">
+        	<KeysCachedFraction>0.01</KeysCachedFraction>
+            	<ColumnFamily CompareWith="UTF8Type" Name="Users" />
+            	<ColumnFamily CompareWith="UTF8Type" Name="Bookmarks" />
+            	<ColumnFamily CompareWith="UTF8Type" Name="Tags" />
+            	<ColumnFamily CompareWith="UTF8Type" Name="UserTags" />
+            	<ColumnFamily CompareWith="UTF8Type" CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" Name="UserBookmarks" />
+        </Keyspace>
+</Keyspaces>
+
