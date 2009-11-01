@@ -1,0 +1,15 @@
+<!--
+WTF Is A Super Column - Arin Sarkissian
+http://arin.me/code/wtf-is-a-supercolumn-cassandra-data-model
+
+<Keyspace Name="BloggyAppy">
+    <!-- other keyspace config stuff -->
+
+    <!-- CF definitions -->
+    <ColumnFamily CompareWith="BytesType" Name="Authors"/>
+    <ColumnFamily CompareWith="BytesType" Name="BlogEntries"/>
+    <ColumnFamily CompareWith="TimeUUIDType" Name="TaggedPosts"/>
+    <ColumnFamily CompareWith="TimeUUIDType" Name="Comments"
+        CompareSubcolumnsWith="BytesType" type="Super"/>
+</Keyspace>
+
