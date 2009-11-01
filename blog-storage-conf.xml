@@ -1,6 +1,7 @@
 <!--
 WTF Is A Super Column - Arin Sarkissian
 http://arin.me/code/wtf-is-a-supercolumn-cassandra-data-model
+-->
 
 <Keyspace Name="BloggyAppy">
     <!-- other keyspace config stuff -->
