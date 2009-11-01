@@ -1,0 +1,15 @@
+<!--
+From:
+http://github.com/ericflo/twissandra/tree/master
+-->
+
+<Keyspace Name="Twitter">
+  <ColumnFamily CompareWith="UTF8Type" Name="Statuses" />
+  <ColumnFamily CompareWith="UTF8Type" Name="StatusAudits" />
+  <ColumnFamily CompareWith="UTF8Type" Name="StatusRelationships"
+    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" />  
+  <ColumnFamily CompareWith="UTF8Type" Name="Users" />
+  <ColumnFamily CompareWith="UTF8Type" Name="UserRelationships"
+    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" />
+</Keyspace>
+i
