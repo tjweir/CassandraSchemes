@@ -1,6 +1,8 @@
 <!--
 From:
 http://github.com/ericflo/twissandra/tree/master
+and
+http://blog.evanweaver.com/articles/2009/07/06/up-and-running-with-cassandra/
 -->
 
 <Keyspace Name="Twitter">
