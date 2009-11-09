@@ -1,17 +1,24 @@
 <!--
 From:
-http://github.com/ericflo/twissandra/tree/master
+http://github.com/fauna/cassandra
 and
 http://blog.evanweaver.com/articles/2009/07/06/up-and-running-with-cassandra/
--->
 
+UPDATED: Reflects the latest from the official Twitter Cassandra client.
+-->
 <Keyspace Name="Twitter">
-  <ColumnFamily CompareWith="UTF8Type" Name="Statuses" />
-  <ColumnFamily CompareWith="UTF8Type" Name="StatusAudits" />
-  <ColumnFamily CompareWith="UTF8Type" Name="StatusRelationships"
-    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" />  
-  <ColumnFamily CompareWith="UTF8Type" Name="Users" />
-  <ColumnFamily CompareWith="UTF8Type" Name="UserRelationships"
-    CompareSubcolumnsWith="TimeUUIDType" ColumnType="Super" />
+    <KeysCachedFraction>0.01</KeysCachedFraction>
+    <ColumnFamily CompareWith="UTF8Type" Name="Users" />
+    <ColumnFamily CompareWith="UTF8Type" Name="UserAudits" />
+    <ColumnFamily CompareWith="UTF8Type"
+                  CompareSubcolumnsWith="TimeUUIDType"
+                  ColumnType="Super"
+                  Name="UserRelationships" />
+    <ColumnFamily CompareWith="UTF8Type" Name="Usernames" />
+    <ColumnFamily CompareWith="UTF8Type" Name="Statuses" />
+    <ColumnFamily CompareWith="UTF8Type" Name="StatusAudits" />
+    <ColumnFamily CompareWith="UTF8Type"
+                  CompareSubcolumnsWith="TimeUUIDType"
+                  ColumnType="Super"
+                  Name="StatusRelationships" />
 </Keyspace>
-i
