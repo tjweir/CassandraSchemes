@@ -11,6 +11,6 @@ http://arin.me/code/wtf-is-a-supercolumn-cassandra-data-model
     <ColumnFamily CompareWith="BytesType" Name="BlogEntries"/>
     <ColumnFamily CompareWith="TimeUUIDType" Name="TaggedPosts"/>
     <ColumnFamily CompareWith="TimeUUIDType" Name="Comments"
-        CompareSubcolumnsWith="BytesType" type="Super"/>
+        CompareSubcolumnsWith="BytesType" ColumnType="Super"/>
 </Keyspace>
 
